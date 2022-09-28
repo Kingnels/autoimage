@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-content: center;
+    // grid-template-columns: repeat(autofit, minmax(20rem, 1fr));
+    section{
+        display: flex;
+        padding: 2rem;
+        gap: 1rem;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        border: 1px solid;
+        border-left: transparent;
+        border-right: transparent;
+        border-radius: 10px;
+        margin: auto auto;
+        width: 80vw;
+        max-width: 1100px;
+
+        .image{
+            height: 250px;
+            width: 250px;
+            img{
+                height: 100%;
+                border-radius: 10px;
+                width: 100%;
+                object-fit: cover;
+                transition: all linear 1s ;
+            }
+        }
+    }
+}
